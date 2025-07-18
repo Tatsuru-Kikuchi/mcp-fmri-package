@@ -1,0 +1,61 @@
+# MCP-fMRI Preprocessing Configuration
+# Example configuration file for fMRI preprocessing pipeline
+
+# Input/Output directories
+input_dir: "/path/to/raw/fmri/data"
+output_dir: "/path/to/processed/data"
+
+# Cultural context
+cultural_context: "japanese"
+
+# Ethical guidelines
+ethical_guidelines: true
+
+# Preprocessing parameters
+motion_threshold: 3.0  # mm
+rotation_threshold: 3.0  # degrees
+smoothing_fwhm: 8.0  # mm
+high_pass_cutoff: 128.0  # seconds
+tr: 2.0  # repetition time in seconds
+slice_timing_ref: 0.5  # reference slice (0.5 = middle)
+
+# Participant list (example)
+participants:
+  - "JP001"
+  - "JP002"
+  - "JP003"
+  - "JP004"
+  - "JP005"
+  # Add more participants as needed
+
+# Quality control parameters
+quality_control:
+  min_snr: 80
+  min_tsnr: 50
+  max_motion_volumes_percent: 20  # Percentage of volumes that can exceed motion threshold
+  ghost_to_signal_ratio_max: 0.1
+
+# Cultural-specific adjustments
+japanese_context:
+  motion_compliance_factor: 1.2  # Higher compliance expected
+  educational_context: "collectivist"
+  stereotype_timing: "late"
+  regional_diversity: true
+
+# Output options
+output_options:
+  save_motion_plots: true
+  save_quality_metrics: true
+  generate_qc_report: true
+  detailed_logging: true
+
+# Parallel processing (if supported)
+parallel:
+  enabled: false
+  n_jobs: 4
+
+# Advanced options
+advanced:
+  bias_detection: true
+  similarity_focus: true
+  individual_emphasis: true

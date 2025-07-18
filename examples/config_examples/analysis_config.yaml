@@ -1,0 +1,87 @@
+# MCP-fMRI Analysis Configuration
+# Example configuration file for gender similarity analysis
+
+# Input/Output
+data_dir: "/path/to/processed/data"
+output_dir: "/path/to/analysis/results"
+
+# Analysis parameters
+analysis:
+  similarity_threshold: 0.8
+  bias_detection: true
+  cultural_context: "japanese"
+  individual_emphasis: true
+  similarity_focus: true
+
+# Bias detection settings
+bias_detection:
+  enabled: true
+  sensitivity: "high"  # low, medium, high
+  classification_threshold: 0.65
+  sampling_bias_checks: true
+
+# Cultural context settings
+cultural_context:
+  name: "japanese"
+  education_system: "collectivist"
+  stereotype_timing: "late"
+  regional_diversity: true
+  expected_effect_size: 0.15
+  similarity_expectation: 0.85
+
+# Visualization options
+visualization:
+  generate_plots: true
+  interactive_dashboard: true
+  publication_quality: true
+  color_palette: "viridis"
+  save_formats: ["png", "svg", "html"]
+  plot_types:
+    - "similarity_matrix"
+    - "individual_vs_group"
+    - "effect_size"
+    - "bias_detection"
+
+# Statistical settings
+statistics:
+  confidence_level: 0.95
+  multiple_comparisons_correction: "fdr"
+  effect_size_interpretation:
+    small: 0.2
+    medium: 0.5
+    large: 0.8
+
+# Ethical guidelines
+ethical_guidelines:
+  similarity_emphasis: true
+  individual_focus: true
+  cultural_sensitivity: true
+  bias_mitigation: true
+  transparency: true
+  non_discrimination: true
+  documentation_level: "detailed"
+
+# Output settings
+output:
+  save_plots: true
+  generate_report: true
+  export_data: true
+  create_summary: true
+  formats:
+    - "txt"
+    - "json"
+    - "html"
+
+# Advanced options
+advanced:
+  cross_validation: false
+  bootstrap_iterations: 1000
+  permutation_tests: false
+  feature_selection: false
+  dimensionality_reduction: false
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  save_to_file: true
+  verbose: true
