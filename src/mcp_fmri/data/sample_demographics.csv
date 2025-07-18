@@ -1,0 +1,11 @@
+participant_id,age,gender,education_years,handedness,math_performance,cultural_background,region
+JP001,20,female,14,right,78,japanese,tokyo
+JP002,21,male,15,right,76,japanese,osaka
+JP003,19,female,13,right,79,japanese,kyoto
+JP004,22,male,16,left,74,japanese,tokyo
+JP005,20,female,14,right,80,japanese,other
+JP006,21,male,15,right,75,japanese,osaka
+JP007,23,female,17,right,77,japanese,tokyo
+JP008,20,male,14,right,78,japanese,kyoto
+JP009,19,female,13,right,81,japanese,other
+JP010,22,male,16,right,73,japanese,tokyo
